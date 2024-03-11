@@ -1,4 +1,11 @@
 specVersion: 0.36.0
 name: pactest
 runtime: node
+registry: image-registry.openshift-image-registry.svc:5000/pac
+image: image-registry.openshift-image-registry.svc:5000/pac/pactest:latest
 created: 2024-03-11T13:24:35.138672289-03:00
+build:
+  git:
+    url: https://github.com/jrangelramos/pactest
+    revision: main
+  builder: s2i
