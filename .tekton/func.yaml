@@ -1,0 +1,8 @@
+specVersion: ""
+registry: image-registry.openshift-image-registry.svc:5000/pac
+created: 0001-01-01T00:00:00Z
+build:
+  git:
+    url: https://github.com/jrangelramos/pactest
+    revision: main
+  builder: s2i
